@@ -12,7 +12,7 @@ export const metadata = {
 const banner = <Banner storageKey="some-key">HKU CCAI9024</Banner>
 const navbar = (
     <Navbar
-        logo={<img src="/images/general/hku_logo.jpg" alt="Logo" width={175} height={20}/>}
+        logo={<img src="/images/general/hku_logo.jpg" alt="Logo" width={180} height={20}/>}
         // ... Your additional navbar options
     />
 )
