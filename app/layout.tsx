@@ -13,9 +13,9 @@ const banner = <Banner storageKey="some-key">HKU CCAI9024</Banner>
 const navbar = (
     <Navbar
         logo={
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                <img src="/images/general/hku_logo.png" alt="HKU Logo" width={200} height={20}/>
-                <img src="/images/general/ids_logo.png" alt="IDS Logo" width={200} height={20}/>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '2px' }}>
+                <img src="/images/general/hku_logo.png" alt="HKU Logo" width={250} height={20}/>
+                <img src="/images/general/ids_logo.png" alt="IDS Logo" width={250} height={20}/>
             </div>
         }
     />
