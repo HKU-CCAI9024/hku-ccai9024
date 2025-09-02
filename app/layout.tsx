@@ -12,8 +12,12 @@ export const metadata = {
 const banner = <Banner storageKey="some-key">HKU CCAI9024</Banner>
 const navbar = (
     <Navbar
-        logo={<img src="/images/general/hku_logo.jpg" alt="Logo" width={180} height={20}/>}
-        // ... Your additional navbar options
+        logo={
+            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                <img src="/images/general/hku_logo.png" alt="HKU Logo" width={200} height={20}/>
+                <img src="/images/general/ids_logo.png" alt="IDS Logo" width={200} height={20}/>
+            </div>
+        }
     />
 )
 const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>
@@ -28,11 +32,8 @@ export default async function RootLayout({children}) {
             // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
             suppressHydrationWarning
         >
-        <Head
-            // ... Your additional head options
-        >
+        <Head>
             <link rel="shortcut icon" href="/images/general/hku_icon.jpg"/>
-            {/* Your additional tags should be passed as `children` of `<Head>` element */}
         </Head>
         <body>
         <Layout
@@ -41,7 +42,6 @@ export default async function RootLayout({children}) {
             pageMap={await getPageMap()}
             docsRepositoryBase="https://github.com/HKU-CCAI9024/hku-ccai9024/tree/main"
             // footer={footer}
-            // ... Your additional layout options
         >
             {children}
         </Layout>
